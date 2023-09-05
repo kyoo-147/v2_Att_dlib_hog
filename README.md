@@ -3,26 +3,26 @@
 
 Mở đầu:
 ** Phát hiện và nhận diện cá nhân đơn thể hoặc nhiều khuôn mặt cùng lúc từ camera
- # Giao diện đăng kí khuôn mặt với Tkinter
- # Khi máy ảnh quá gần với khuôn mặt, out of ROI khỏi vùng camera-cảnh báo Out Of Range sẽ xuất hiện
- # Tạo cơ sở dữ liệu từ hình ảnh chụp từ camera
- # Nhận diện khuôn mặt-phát hiện và nhận diện với mỗi khung frame hình-đối với single face-sẽ chỉ thực thi nhận dạng một khuôn mặt mới xuất hiện để cải thiện FPS
- # Sử dụng OT để đạt chất lượng nhận dạng cải thiện FPS cho mọi frame 
- # Hỗ trợ show tên bằng tiếng trung quốc
+  Giao diện đăng kí khuôn mặt với Tkinter
+  Khi máy ảnh quá gần với khuôn mặt, out of ROI khỏi vùng camera-cảnh báo Out Of Range sẽ xuất hiện
+  Tạo cơ sở dữ liệu từ hình ảnh chụp từ camera
+  Nhận diện khuôn mặt-phát hiện và nhận diện với mỗi khung frame hình-đối với single face-sẽ chỉ thực thi nhận dạng một khuôn mặt mới xuất hiện để cải thiện FPS
+  Sử dụng OT để đạt chất lượng nhận dạng cải thiện FPS cho mọi frame 
+  Hỗ trợ show tên bằng tiếng trung quốc
 
 ** Về độ chính xác
- # Khi sử dụng ngưỡng khoảng cách "0.6" mô hình dlib có thể đạt độ chính xác lên đến ``99.38%`` trên tiêu chuẩn nhận diện khuôn mặt LFW tiêu chuẩn
+  Khi sử dụng ngưỡng khoảng cách "0.6" mô hình dlib có thể đạt độ chính xác lên đến ``99.38%`` trên tiêu chuẩn nhận diện khuôn mặt LFW tiêu chuẩn
 
 ** Về thuật toán
- # Mô hình CNN dựa trên Residual Neural Network(Mạnh nơ-ron hồi quy)
- # Đây là mô hình mạng ResNet với 29 lớp tối ưu
- # về cơ bản, đây là một phiên bản của ResNet-34 Network từ bài báo Deep Residual Learning cho Image Recognition bởi nhóm He, Zhang, Ren và Sun với một số lớp đã được loại bỏ và số lượng bộ lọc mỗi khung hình được giảm đi một nửa.
+  Mô hình CNN dựa trên Residual Neural Network(Mạnh nơ-ron hồi quy)
+  Đây là mô hình mạng ResNet với 29 lớp tối ưu
+  về cơ bản, đây là một phiên bản của ResNet-34 Network từ bài báo Deep Residual Learning cho Image Recognition bởi nhóm He, Zhang, Ren và Sun với một số lớp đã được loại bỏ và số lượng bộ lọc mỗi khung hình được giảm đi một nửa.
 
 ** Tổng quan
- #  Quá trình triển khai nhận dạng khuôn mặt trong dự án, phát hiện và nhận dạng cho mọi frame
+   Quá trình triển khai nhận dạng khuôn mặt trong dự án, phát hiện và nhận dạng cho mọi frame
     + Không OT, nhận diện từng frame, nhận dạng
     + Với OT, phát hiện khung hình ban đầu, khung tiếp theo, theo dõi trọng tâm-OT được sử dụng
- # Sử đụng OT có tiết kiệm được thời gian tính toán bộ mô tả khuôn mặt để cải thiện FPS
+  Sử đụng OT có tiết kiệm được thời gian tính toán bộ mô tả khuôn mặt để cải thiện FPS
 
 ** Source Code
 ** Install package
