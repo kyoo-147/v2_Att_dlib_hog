@@ -21,6 +21,7 @@ class X_Main():
         self.xmain = tk.Tk()
         self.xmain.title("X_Main - @minhcuong-AILab")
         self.xmain.geometry("1300x800")
+        self.xmain.resizable(False, False)
         # Background main x
         self.background_image = PhotoImage(file="uii/main0.png")
         self.background_label = tk.Label(self.xmain, image=self.background_image)
