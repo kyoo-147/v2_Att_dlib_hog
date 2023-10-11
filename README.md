@@ -1,6 +1,6 @@
 -------------Vesion 2 Update Face Atthendance Recognition - AI-Lab
 ##########################
-
+----Phát Triển: Bùi Minh Cường - NaVin Tech-----
 Mở đầu:
 ** Phát hiện và nhận diện cá nhân đơn thể hoặc nhiều khuôn mặt cùng lúc từ camera
   Giao diện đăng kí khuôn mặt với Tkinter
