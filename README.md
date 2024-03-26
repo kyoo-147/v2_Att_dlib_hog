@@ -28,6 +28,7 @@ Mở đầu:
 ** Source Code
 ** Install package
  # pip install -r requirements.txt
+ # sẽ sớm có cập nhập readme - update lỗi: X_Recog_OT
 ---------------How to run models-------------------------
 ** Giao diện đăng kí tên người dùng: open cmd in folder save model: run: python get_faces_from_camera_tkinter.py
 or
